@@ -1,9 +1,0 @@
-from urllib.parse import urlparse
-url = input("Enter URL: ").lower()
-host = urlparse(url).hostname or ""
-if (any(k in url for k in ["verify", "login", "free"])
-    or host.replace(".", "").isdigit()
-    or host.count(".") >= 3):
-    print("Suspicious URL")
-else:
-    print("No common indicators found")

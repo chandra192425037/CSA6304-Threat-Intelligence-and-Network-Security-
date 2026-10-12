@@ -1,9 +1,0 @@
-s = input("Enter scenario: ").lower()
-if "bank" in s or "fraud" in s:
-    print("Banking Fraud Prevention")
-elif "hospital" in s or "patient" in s:
-    print("Healthcare Data Protection")
-elif "shopping" in s or "order" in s:
-    print("E-Commerce Fraud Prevention")
-else:
-    print("Cloud Security")
