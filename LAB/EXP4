@@ -1,0 +1,7 @@
+msg = "HELLO"
+key = 5
+encrypted = "".join(chr(ord(c) ^ key) for c in msg)
+decrypted = "".join(chr(ord(c) ^ key) for c in encrypted)
+print("Original:", msg)
+print("Encrypted:", repr(encrypted))
+print("Decrypted:", decrypted)
