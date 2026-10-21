@@ -1,0 +1,5 @@
+s = input("Incident: ").lower()
+for k,v in {"Phishing":"fake email","Unpatched vulnerability":"unpatched","Misconfiguration":"open port","Insider threat":"employee","Supply-chain compromise":"vendor"}.items():
+    if v in s:
+        print(k)
+        break
