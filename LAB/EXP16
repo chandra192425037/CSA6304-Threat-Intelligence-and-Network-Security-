@@ -1,0 +1,6 @@
+for layer in ["Firewall", "IDS", "Antivirus", "MFA"]:
+    if input(f"{layer} blocked? (y/n): ") == "y":
+        print("Attack stopped by", layer)
+        break
+else:
+    print("Attack succeeded")
