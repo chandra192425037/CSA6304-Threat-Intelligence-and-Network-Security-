@@ -1,0 +1,9 @@
+allowed = False
+p = input("Packet (out/return/in): ")
+if p == "out":
+    allowed = True
+    print("Outbound allowed")
+elif p == "return" and allowed:
+    print("Return allowed")
+else:
+    print("Blocked")
