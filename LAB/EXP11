@@ -1,0 +1,6 @@
+from scapy.all import sniff, conf
+print("Packet Sniffer Started...")
+print("Capturing 5 packets...\n")
+sniff(iface=conf.iface, count=5,
+      prn=lambda p: print(p.summary()))
+print("\nPacket capture completed.")
