@@ -1,0 +1,4 @@
+events = ["login failed", "login failed", "login success"]
+events = [e.lower() for e in events]
+if events.count("login failed") >= 2:
+    print("ALERT: Repeated failed logins")
