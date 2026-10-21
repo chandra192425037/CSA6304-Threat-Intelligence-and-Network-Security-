@@ -1,0 +1,4 @@
+c = input("Context (y/n): ")
+f = input("Confidence (y/n): ")
+a = input("Actionable (y/n): ")
+print("Threat Intelligence" if c == f == a == "y" else "Raw Data")
