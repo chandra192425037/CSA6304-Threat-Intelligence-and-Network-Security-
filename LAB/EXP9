@@ -1,0 +1,5 @@
+s = input("Activity: ").lower()
+for k,v in {"Direction":"requirements","Collection":"gather","Processing":"clean","Analysis":"investigate","Dissemination":"share","Feedback":"review"}.items():
+    if v in s:
+        print(k)
+        break
