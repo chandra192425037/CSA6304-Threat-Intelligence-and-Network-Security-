@@ -1,0 +1,6 @@
+s = input("Alert: ").lower()
+if "ransomware" in s or "breach" in s: p = "P1"
+elif "malware" in s: p = "P2"
+elif "suspicious" in s: p = "P3"
+else: p = "P4"
+print(p)
