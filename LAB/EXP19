@@ -1,0 +1,13 @@
+from collections import Counter
+events = [
+    {"user": "Ram", "type": "login"},
+    {"user": "Sam", "type": "failed"},
+    {"user": "Ram", "type": "login"},
+    {"user": "Raj", "type": "failed"}
+]
+print("Search Results:")
+for e in events:
+    if e["type"] == "failed":
+        print(e)
+print("Stats Count:")
+print(Counter(e["type"] for e in events))
