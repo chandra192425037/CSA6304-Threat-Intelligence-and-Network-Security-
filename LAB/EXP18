@@ -1,0 +1,11 @@
+import hashlib
+name = "test.txt"
+with open(name, "w") as f:
+    f.write("Sample file")
+bad = {"abc123"}
+with open(name, "rb") as f:
+    h = hashlib.sha256(f.read()).hexdigest()
+if h in bad:
+    print("Malware Detected")
+else:
+    print("File is Safe")
