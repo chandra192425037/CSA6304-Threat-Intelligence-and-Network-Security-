@@ -1,0 +1,11 @@
+s = input("Enter incident: ").lower()
+if "phishing" in s or "email" in s:
+    print("Phishing")
+elif "ddos" in s or "traffic flood" in s:
+    print("DoS/DDoS")
+elif "malware" in s or "virus" in s:
+    print("Malware")
+elif "intercept" in s or "man-in-the-middle" in s:
+    print("Man-in-the-Middle")
+else:
+    print("Unknown Threat")
