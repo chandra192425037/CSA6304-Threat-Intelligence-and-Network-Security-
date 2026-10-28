@@ -1,0 +1,10 @@
+whitelist = ["192.168.1.10"]
+signatures = ["attack", "malware", "exploit"]
+ip = input("Enter source IP: ")
+data = input("Enter traffic: ").lower()
+if ip in whitelist:
+    print("Allowed: Trusted Source")
+elif any(s in data for s in signatures):
+    print("Blocked: Malicious Traffic")
+else:
+    print("Allowed: Normal Traffic")
