@@ -1,0 +1,17 @@
+baseline = {
+    "firewall": 1,
+    "mfa": 1,
+    "backup": 1,
+    "encryption": 1
+}
+current = {
+    "firewall": 1,
+    "mfa": 0,
+    "backup": 1,
+    "encryption": 0
+}
+for control in baseline:
+    if current[control] < baseline[control]:
+        print(control, "FAILED")
+    else:
+        print(control, "PASSED")
