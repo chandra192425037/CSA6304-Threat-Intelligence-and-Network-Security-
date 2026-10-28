@@ -1,0 +1,11 @@
+s = input("Enter report: ").lower()
+areas = {
+    "patch management": ["patch", "update"],
+    "security awareness": ["awareness", "training"],
+    "monitoring": ["monitoring", "logs"],
+    "backup strategy": ["backup", "recovery"],
+    "access control": ["access", "permission"]
+}
+for area, words in areas.items():
+    if any(w in s for w in words):
+        print(area)
