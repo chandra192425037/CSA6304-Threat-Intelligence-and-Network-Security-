@@ -1,0 +1,18 @@
+user = input("Enter username: ")
+logs = [
+    ("Ram", "fail"),
+    ("Ram", "fail"),
+    ("Ram", "fail"),
+    ("Ram", "success")
+]
+count = 0
+for u, status in logs:
+    if u == user:
+        if status == "fail":
+            count += 1
+        elif status == "success":
+            if count >= 3:
+                print("Brute-force detected")
+            else:
+                print("Normal login")
+            count = 0
